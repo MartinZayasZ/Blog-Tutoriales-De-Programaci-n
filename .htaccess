@@ -1,0 +1,21 @@
+#RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php/$1 [L]
+
+#RewriteCond %{ENV:HTTPS} !on [NC] 
+#RewriteCond %{QUERY_STRING} !wc-api [NC] 
+#RewriteCond %{HTTP_HOST} ^www.tutorialesdeprogramacion.xyz$ [OR] RewriteCond %{HTTP_HOST} ^www.www.tutorialesdeprogramacion.xyz RewriteRule ^(.*)$ https://www.tutorialesdeprogramacion.xyz/$1 [R=301,L,NE]
+
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
