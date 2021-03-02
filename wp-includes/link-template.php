@@ -3660,11 +3660,11 @@ function set_url_scheme( $url, $scheme = null ) {
 	$orig_scheme = $scheme;
 
 	if ( ! $scheme ) {
-		$scheme = is_ssl() ? 'https' : 'http';
+		$scheme = is_ssl() ? 'https' : 'https';
 	} elseif ( 'admin' === $scheme || 'login' === $scheme || 'login_post' === $scheme || 'rpc' === $scheme ) {
-		$scheme = is_ssl() || force_ssl_admin() ? 'https' : 'http';
+		$scheme = is_ssl() || force_ssl_admin() ? 'https' : 'https';
 	} elseif ( 'http' !== $scheme && 'https' !== $scheme && 'relative' !== $scheme ) {
-		$scheme = is_ssl() ? 'https' : 'http';
+		$scheme = is_ssl() ? 'https' : 'https';
 	}
 
 	$url = trim( $url );

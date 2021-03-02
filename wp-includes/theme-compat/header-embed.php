@@ -20,6 +20,9 @@ if ( ! headers_sent() ) {
 <head>
 	<title><?php echo wp_get_document_title(); ?></title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<script data-ad-client="ca-pub-6028022250707513" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	
 	<?php
 	/**
 	 * Prints scripts or data in the embed template head tag.

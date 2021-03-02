@@ -46,6 +46,8 @@ if ( is_singular() ) {
 	wp_enqueue_script( 'comment-reply' );}
 ?>
 
+<script data-ad-client="ca-pub-6028022250707513" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
